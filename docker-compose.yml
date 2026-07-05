@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  rag-app:
+    build: .
+    container_name: advanced-rag-gradio
+    ports:
+      - "7860:7860"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      # Bạn có thể bỏ comment dòng dưới đây và điền API Key của mình, hoặc điền trực tiếp trên giao diện Gradio
+      # - GEMINI_API_KEY=your_gemini_api_key_here
+      # - OPENAI_API_KEY=your_openai_api_key_here
+    restart: unless-stopped

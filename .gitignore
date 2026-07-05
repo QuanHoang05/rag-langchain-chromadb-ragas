@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Project specific exclusions
+chroma_db/
+logs/
+models/fine_tuned_embeddings/
+Ducument/AI/
+
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.ipynb_checkpoints/
+.agents/
+.gemini/
